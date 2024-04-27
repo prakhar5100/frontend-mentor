@@ -1,0 +1,359 @@
+
+@font-face {
+    font-family: "Bold-font";
+    src: url(fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Normal-font";
+    src: url(fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Extra-font";
+    src: url(fonts/static/Inter-ExtraBold.ttf);
+}
+body {
+    padding: 0.45em;
+    background-color: hsl(36, 100%, 99%);
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.2em;
+    gap: 13px;
+}
+.first img {
+    max-width: 100%;
+    flex: 1;
+
+}
+
+.first h1 {
+    font-family: "Bold-font";
+    font-size: 2.5em;
+    color: #272424;
+    line-height: 0.9em;
+    flex: 1;
+}
+
+.first p {
+    font-family: "Normal-font";
+    color: rgb(102, 97, 97);
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: 500;    
+    flex: 1;
+}
+
+.first .read {
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    letter-spacing: 0.3em;
+    font-family: "Normal-font";
+    font-weight: 600;
+    border: none;
+    box-shadow: none;
+    width: 15em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.first .buttondiv{
+    width: 100%;
+    
+}
+.first * {
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+.second {
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 2em 0 2em 0;
+}
+
+.second .line {
+    border: 0.1px solid rgb(132, 132, 132);
+    width: 100%;
+}
+
+.second div {
+    width: 100%;
+}
+.second h1 {
+    color: rgb(241, 241, 241);
+    font-size: 1.1em;
+    font-family: "Bold-font";
+    text-align: start;
+}
+
+.second h2 {
+    color: rgb(180, 180, 180);
+    font-size: 1em;
+    font-family: "Normal-font";
+    text-align: start;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+}
+
+.second .new {
+    font-family: "Bold-font";
+    color: rgb(225, 159, 5);
+    font-size: 2em;
+}
+
+.second .newdiv {
+    width: 100%;
+}
+
+.third {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 2em 0 2em 0;
+}
+
+.third .news {
+    display: flex;
+    gap: 17px;
+}
+
+.third .news .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-family: "Bold-font";
+    font-size: 2em;
+    color: rgb(177, 177, 177);
+    line-height: 0.2;
+}
+
+.text h2 {
+    font-family: "Bold-font";
+    color: black;
+    font-size: 1.1em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.text h3{
+    font-family: "Normal-font";
+    color: rgb(127, 126, 126);
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin: 0.2em 0 0.2em 0;
+    font-weight: 300;
+}
+
+.third .news .image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.third .news .image img{
+    width: 100px;
+}
+
+nav svg {
+    width: 65px;
+    height: 40px;
+    transform: scale(0.7);
+    margin: 0;
+}
+
+nav svg path {
+    width: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu svg {
+    transform: scale(1);
+}
+
+nav .bar {
+    background-color: rgba(92, 92, 92, 0.281);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.bar .menu-bar {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    float: right;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+.menu-bar .close {
+    width: 100%;
+}
+.menu-bar .close:hover{
+    cursor: pointer;
+}
+.menu-bar .close svg {
+    margin: 20px 0 20px 0;
+    float: right;
+}
+
+.content {
+    clear: right;
+}
+
+.content ul {
+    list-style-type: none;
+    font-family: "Normal-font";
+    padding: 25px;
+    color: #000;
+}
+
+.content ul li {
+    margin: 25px 0 25px 0;
+}
+.content ul li:hover {
+    cursor: pointer;
+}
+
+@media screen  and (min-width: 800px){
+    body {
+        padding: 4% 10% 4% 10%;
+    }
+
+    .singlediv {
+        max-height: 950vh;
+    }
+    .first {
+        width: 70%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0;
+        padding: 0;
+    }
+    .first picture {
+        max-width: 100%;
+        margin-bottom: auto;
+        margin-top: 0;
+    }
+
+    .first picture img{
+        margin: 0;
+    }
+    .first .doublediv {
+        display: flex;
+        gap: 40px;
+    }
+
+    .first .doublediv h1 {
+        min-width: 40%;
+        text-align: start;
+        line-height: 1.1;
+        font-size: 3em;
+    }
+
+    .first .thirdiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .singlediv {
+        display: flex;
+        gap: 20px;
+    }
+
+    .singlediv .second {
+        max-width: 30%;
+        margin-top: 0;
+        max-height: 100%;
+    }
+
+    .third {
+        flex-direction: row;
+    }
+
+    .third h2 {
+        margin-top: 0px;
+        margin-bottom: 0px
+    }
+
+    nav .bar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    nav .close {
+        display: none;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    .content ul li{
+        display: inline;
+        margin-right: 40px;
+        margin-top: 0;
+        margin-bottom: 0;
+        
+    }
+
+    .content ul li:hover {
+        color: hsl(5, 85%, 63%) ;
+    }
+    .content ul li:last-child{
+        margin-right: 0;
+    }
+    .content ul {
+        float: right;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    nav {
+        margin-bottom: 2em;
+    }
+
+    .first .read:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .second h1:hover {
+        color: rgb(225, 159, 5) ;
+        cursor: pointer;
+    }
+
+    .third h2:hover {
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+    }
+}
